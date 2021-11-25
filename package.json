@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "Installs AWS cli",
-  "main": "lib/main.js",
+  "main": "src/main.ts",
   "scripts": {
     "build": "tsc && ncc build",
     "test": "jest --coverage",
