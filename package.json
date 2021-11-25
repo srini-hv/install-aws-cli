@@ -5,7 +5,7 @@
   "description": "Installs AWS cli",
   "main": "lib/main.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && ncc build",
     "test": "jest --coverage",
     "format": "eslint --fix './src/*.ts'; eslint --fix './tests/*.ts'",
     "publish": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD); if [[ $branch == \"master\" ]]; then npm run-script \"change-branch\"; else npm run-script \"create-publish\"; fi;",
